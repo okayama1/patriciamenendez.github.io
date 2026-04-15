@@ -1,0 +1,311 @@
+body {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)),
+    url("photos/background-texture.png") center center / cover fixed no-repeat;
+  color: #000f46;
+}
+
+a,
+a:hover,
+a:focus {
+  color: #000f46;
+}
+
+.navbar {
+  background-color: #000f46;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link,
+.navbar-nav .nav-link .menu-text,
+.navbar .quarto-navbar-tools .quarto-navigation-tool,
+.navbar .navbar-title {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar .quarto-navbar-tools .quarto-navigation-tool:hover {
+  color: #e7f2ff;
+}
+
+.hero-banner {
+  padding: 1.35rem 1.5rem 1.05rem;
+  margin: -0.65rem 0 1.5rem;
+  background:
+    linear-gradient(135deg, rgba(0, 10, 38, 0.98), rgba(0, 15, 70, 0.95)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  color: #ffffff;
+  border-radius: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 40px rgba(2, 10, 24, 0.28);
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.hero-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.hero-mark {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.uom-logo-hero {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+}
+
+.hero-banner h2 {
+  color: #ffffff;
+  font-size: clamp(1.55rem, 2.4vw, 2.35rem);
+  margin-bottom: 0.2rem;
+}
+
+.hero-banner p,
+.hero-banner a {
+  font-size: 0.95rem;
+}
+
+.hero-link,
+.hero-link:visited,
+.hero-banner .hero-link,
+.hero-banner .hero-link:visited,
+.hero-banner a.hero-link {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 0.12rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.hero-link:hover,
+.hero-link:focus,
+.hero-banner .hero-link:hover,
+.hero-banner .hero-link:focus {
+  color: #e7f2ff;
+  border-color: #e7f2ff;
+}
+
+.grid {
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.profile-panel {
+  padding: 1.5rem;
+  background: #000f46;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 28px rgba(2, 10, 24, 0.18);
+  min-height: calc(100% - 1.25rem);
+}
+
+.profile-panel h3,
+.profile-panel p,
+.profile-panel li,
+.profile-panel strong {
+  color: #ffffff;
+}
+
+.profile-panel h3 {
+  font-size: 1.45rem;
+  white-space: nowrap;
+}
+
+.profile-meta {
+  margin: 0.75rem 0 1rem;
+}
+
+.profile-meta p {
+  margin: 0 0 0.45rem;
+  line-height: 1.35;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 1.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 14px 30px rgba(2, 10, 24, 0.24);
+}
+
+.hobby-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  margin: 0 0 1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(0, 15, 70, 0.1);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.page-title,
+.fun-card {
+  text-align: center;
+}
+
+.fun-card {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.fun-card .hobby-photo {
+  min-height: 460px;
+}
+
+.feature-card {
+  padding: 1.25rem;
+  background: #ffffff;
+  color: #000f46;
+  border: 1px solid rgba(0, 15, 70, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 10px 24px rgba(2, 10, 24, 0.08);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  color: #000f46;
+}
+
+.feature-card .anchorjs-link,
+.feature-card .anchored .anchorjs-link {
+  display: none !important;
+}
+
+.sidebar nav[role="doc-toc"] a,
+#TOC a,
+.toc-actions a,
+.quarto-listing-category {
+  color: #000f46;
+}
+
+.sidebar nav[role="doc-toc"] a:hover,
+#TOC a:hover {
+  color: #001b7a;
+}
+
+.table,
+table {
+  color: #000f46;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  color: #000f46;
+  background-color: rgba(0, 15, 70, 0.04);
+}
+
+.quarto-title,
+.quarto-title-meta,
+.quarto-title-meta-heading,
+.quarto-title-meta-contents,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+dt,
+dd,
+figcaption,
+.callout,
+.callout p {
+  color: #000f46;
+}
+
+.page-columns .content,
+.content {
+  max-width: 72rem;
+}
+
+#quarto-document-content p,
+#quarto-document-content li {
+  text-align: justify;
+}
+
+.quarto-title-banner {
+  background: transparent;
+}
+
+.page-footer {
+  color: #000f46;
+  border-top: 1px solid rgba(0, 15, 70, 0.14);
+  background: #ffffff;
+}
+
+.page-footer a {
+  color: #000f46;
+}
+
+.table thead th,
+th,
+td {
+  border-color: rgba(0, 15, 70, 0.18);
+}
+
+td br {
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+main.content section.level2 {
+  margin-bottom: 1.75rem;
+}
+
+main.content h2,
+main.content h3 {
+  text-wrap: balance;
+}
+
+main.content ol {
+  padding-left: 1.8rem;
+}
+
+main.content ol li {
+  padding-left: 0.2rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .uom-logo-hero {
+    max-width: 140px;
+  }
+}
