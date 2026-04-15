@@ -79,6 +79,21 @@ a:focus {
   font-size: 0.95rem;
 }
 
+.hero-subtitle {
+  margin-bottom: 0.2rem;
+}
+
+.hero-subtitle p {
+  margin-bottom: 0;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.18rem 0.75rem;
+}
+
 .hero-link,
 .hero-link:visited,
 .hero-banner .hero-link,
@@ -378,11 +393,20 @@ main.content ol li {
   }
 
   .home-page .hero-layout {
-    gap: 0.45rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 64px;
+    align-items: start;
+    gap: 0.4rem;
   }
 
   .home-page .uom-logo-hero {
     max-width: 64px;
+  }
+
+  .home-page .hero-copy {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
   }
 
   .home-page .hero-banner h2 {
@@ -405,6 +429,16 @@ main.content ol li {
     margin-top: 0.01rem;
   }
 
+  .home-page .hero-links {
+    gap: 0.08rem 0.35rem;
+    align-items: flex-start;
+  }
+
+  .home-page .hero-mark {
+    justify-self: end;
+    align-self: start;
+  }
+
   .home-page .grid {
     gap: 0.55rem;
   }
@@ -420,7 +454,7 @@ main.content ol li {
   .home-page .profile-panel {
     padding: 0.62rem;
     font-size: 0.58rem;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
 
   .home-page .profile-panel h3 {
@@ -456,8 +490,8 @@ main.content ol li {
   .home-page .profile-meta,
   .home-page .profile-meta p {
     max-width: 100%;
-    overflow-wrap: anywhere;
-    word-break: break-word;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 
   .home-page .profile-meta {
@@ -468,6 +502,26 @@ main.content ol li {
   .home-page .profile-panel ol,
   .home-page .profile-panel p {
     margin-bottom: 0.35rem;
+  }
+
+  .home-page .profile-panel > p {
+    margin-top: 0.18rem;
+    margin-bottom: 0.18rem;
+    line-height: 1.1;
+  }
+
+  .home-page .profile-panel ul {
+    padding-left: 0.95rem;
+    margin-left: 0;
+  }
+
+  #quarto-document-content .home-page .profile-panel li,
+  #quarto-document-content .home-page .profile-panel p,
+  #quarto-document-content .home-page .profile-meta p {
+    text-align: left;
+    line-height: 1.22;
+    word-break: normal;
+    overflow-wrap: break-word;
   }
 
   .feature-grid {
