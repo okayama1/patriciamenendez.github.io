@@ -295,6 +295,77 @@ main.content ol li {
   line-height: 1.55;
 }
 
+@media (max-width: 1100px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+  }
+
+  .fun-card {
+    max-width: 380px;
+  }
+
+  .fun-card .hobby-photo {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-banner {
+    padding: 1.15rem 1.2rem 0.95rem;
+    border-radius: 1.4rem;
+  }
+
+  .hero-layout {
+    gap: 1rem;
+  }
+
+  .uom-logo-hero {
+    max-width: 150px;
+  }
+
+  .profile-panel h3 {
+    white-space: normal;
+  }
+
+  .profile-photo {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+  .home-page .grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0.9rem;
+  }
+
+  .home-page .grid > .g-col-12.g-col-md-4 {
+    grid-column: span 5;
+  }
+
+  .home-page .grid > .g-col-12.g-col-md-8 {
+    grid-column: span 7;
+  }
+
+  .home-page .profile-panel {
+    padding: 1rem;
+    font-size: 0.78rem;
+  }
+
+  .home-page .profile-panel h3 {
+    font-size: 1rem;
+  }
+
+  .home-page .profile-photo {
+    max-width: 150px;
+    margin-bottom: 0.75rem;
+  }
+
+  .home-page #quarto-document-content > .grid,
+  .home-page .grid {
+    font-size: 0.82rem;
+  }
+}
+
 @media (max-width: 600px) and (orientation: portrait) {
   .home-page {
     font-size: 0.74rem;
@@ -392,105 +463,27 @@ main.content ol li {
   .feature-grid {
     grid-template-columns: 1fr;
   }
+}
 
-  .grid {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 0.7rem;
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
   }
 
-  .grid > .g-col-12.g-col-md-4 {
-    grid-column: span 5;
+  .fun-card {
+    max-width: 320px;
   }
 
-  .grid > .g-col-12.g-col-md-8 {
-    grid-column: span 7;
+  .fun-card .hobby-photo {
+    min-height: 300px;
   }
 
-  .hero-layout {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 0.55rem;
+  main.content ol {
+    padding-left: 1.4rem;
   }
 
-  .uom-logo-hero {
-    max-width: 74px;
-  }
-
-  .hero-copy,
-  .hero-mark {
-    flex: 0 1 auto;
-  }
-
-  .hero-mark {
-    justify-content: flex-end;
-    margin-top: 0;
-    padding-top: 0.05rem;
-  }
-
-  .hero-banner {
-    padding: 0.58rem 0.7rem 0.55rem;
-    margin: -0.35rem 0 0.8rem;
-    border-radius: 0.95rem;
-  }
-
-  .hero-copy {
-    min-width: 0;
-  }
-
-  .profile-panel {
-    padding: 0.82rem;
-    font-size: 0.72rem;
-  }
-
-  .profile-panel h3 {
-    white-space: normal;
-    font-size: 0.92rem;
-  }
-
-  .profile-photo {
-    max-width: 138px;
-    margin-bottom: 0.7rem;
-  }
-
-  .hero-banner h2 {
-    font-size: clamp(0.98rem, 4vw, 1.2rem);
-    margin-bottom: 0.04rem;
-  }
-
-  .hero-banner p,
-  .hero-banner a {
-    font-size: 0.64rem;
-    line-height: 1.22;
-  }
-
-  .hero-link,
-  .hero-link:visited,
-  .hero-banner .hero-link,
-  .hero-banner .hero-link:visited,
-  .hero-banner a.hero-link {
-    margin-right: 0.32rem;
-    margin-top: 0.02rem;
-  }
-
-  #quarto-document-content > .grid {
-    font-size: 0.76rem;
-  }
-
-  #quarto-document-content > .grid h2 {
-    font-size: 1.05rem;
-  }
-
-  #quarto-document-content > .grid h3 {
-    font-size: 0.9rem;
-  }
-
-  .profile-meta {
-    margin: 0.5rem 0 0.7rem;
-  }
-
-  .profile-meta p {
-    line-height: 1.2;
+  .table,
+  table {
+    font-size: 0.95rem;
   }
 }
