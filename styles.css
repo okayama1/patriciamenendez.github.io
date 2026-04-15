@@ -489,6 +489,11 @@ main.content ol li {
 }
 
 @media (max-width: 932px) and (orientation: landscape) {
+  .home-page,
+  .home-page * {
+    min-width: 0;
+  }
+
   .home-page .hero-banner {
     padding: 1rem 1.1rem 0.85rem;
     margin: -0.45rem 0 1rem;
@@ -523,6 +528,7 @@ main.content ol li {
   }
 
   .home-page .grid {
+    display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 1rem;
   }
@@ -563,11 +569,12 @@ main.content ol li {
   }
 
   .home-page .feature-grid {
-    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
   }
 
   .home-page .feature-card {
     padding: 1rem;
+    min-width: 0;
   }
 }
