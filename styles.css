@@ -487,3 +487,87 @@ main.content ol li {
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 932px) and (orientation: landscape) {
+  .home-page .hero-banner {
+    padding: 1rem 1.1rem 0.85rem;
+    margin: -0.45rem 0 1rem;
+    border-radius: 1.2rem;
+  }
+
+  .home-page .hero-layout {
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .home-page .uom-logo-hero {
+    max-width: 110px;
+  }
+
+  .home-page .hero-banner h2 {
+    font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  }
+
+  .home-page .hero-banner p,
+  .home-page .hero-banner a {
+    font-size: 0.78rem;
+    line-height: 1.25;
+  }
+
+  .home-page .hero-link,
+  .home-page .hero-link:visited,
+  .home-page .hero-banner .hero-link,
+  .home-page .hero-banner .hero-link:visited,
+  .home-page .hero-banner a.hero-link {
+    margin-right: 0.5rem;
+  }
+
+  .home-page .grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .home-page .grid > .g-col-12.g-col-md-4 {
+    grid-column: span 4;
+  }
+
+  .home-page .grid > .g-col-12.g-col-md-8 {
+    grid-column: span 8;
+  }
+
+  .home-page .profile-panel {
+    padding: 1rem;
+    font-size: 0.78rem;
+  }
+
+  .home-page .profile-panel h3 {
+    font-size: 1rem;
+  }
+
+  .home-page .profile-photo {
+    max-width: 165px;
+    margin-bottom: 0.8rem;
+  }
+
+  .home-page #quarto-document-content > .grid,
+  .home-page .grid {
+    font-size: 0.84rem;
+  }
+
+  .home-page .grid h2 {
+    font-size: 1.15rem;
+  }
+
+  .home-page .grid h3 {
+    font-size: 0.96rem;
+  }
+
+  .home-page .feature-grid {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .home-page .feature-card {
+    padding: 1rem;
+  }
+}
