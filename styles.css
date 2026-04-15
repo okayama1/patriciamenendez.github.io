@@ -138,6 +138,13 @@ a:focus {
   color: #ffffff;
 }
 
+.home-page .profile-panel p,
+.home-page .profile-panel li,
+.home-page .profile-meta p {
+  text-align: left;
+  text-justify: auto;
+}
+
 .profile-panel h3 {
   font-size: 1.45rem;
   white-space: nowrap;
@@ -150,6 +157,19 @@ a:focus {
 .profile-meta p {
   margin: 0 0 0.45rem;
   line-height: 1.35;
+}
+
+.profile-title-lines div {
+  margin: 0 0 0.18rem;
+  line-height: 1.18;
+  text-align: left;
+  text-justify: auto;
+}
+
+.profile-title-lines div:first-child {
+  font-size: inherit;
+  line-height: 1.14;
+  white-space: nowrap;
 }
 
 .profile-photo {
@@ -382,6 +402,11 @@ main.content ol li {
 }
 
 @media (max-width: 600px) and (orientation: portrait) {
+  .home-page .profile-title-lines div:first-child {
+    white-space: normal;
+    text-wrap: balance;
+  }
+
   .home-page {
     font-size: 0.74rem;
   }
@@ -440,21 +465,17 @@ main.content ol li {
   }
 
   .home-page .grid {
+    display: grid;
+    grid-template-columns: minmax(108px, 34%) minmax(0, 1fr);
     gap: 0.55rem;
-  }
-
-  .home-page .grid > .g-col-12.g-col-md-4 {
-    grid-column: span 4;
-  }
-
-  .home-page .grid > .g-col-12.g-col-md-8 {
-    grid-column: span 8;
   }
 
   .home-page .profile-panel {
     padding: 0.62rem;
-    font-size: 0.58rem;
+    font-size: 0.56rem;
     overflow-wrap: break-word;
+    max-width: none;
+    min-height: 100%;
   }
 
   .home-page .profile-panel h3 {
@@ -487,6 +508,20 @@ main.content ol li {
     padding: 0.9rem;
   }
 
+  .home-page .g-col-12.g-col-md-4,
+  .home-page .g-col-12.g-col-md-8 {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .home-page .g-col-12.g-col-md-4 {
+    grid-column: 1;
+  }
+
+  .home-page .g-col-12.g-col-md-8 {
+    grid-column: 2;
+  }
+
   .home-page .profile-meta,
   .home-page .profile-meta p {
     max-width: 100%;
@@ -517,11 +552,13 @@ main.content ol li {
 
   #quarto-document-content .home-page .profile-panel li,
   #quarto-document-content .home-page .profile-panel p,
+  #quarto-document-content .home-page .profile-panel section p,
   #quarto-document-content .home-page .profile-meta p {
     text-align: left;
     line-height: 1.22;
     word-break: normal;
     overflow-wrap: break-word;
+    text-justify: auto;
   }
 
   .feature-grid {
