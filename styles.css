@@ -297,7 +297,7 @@ main.content ol li {
 
 @media (max-width: 600px) and (orientation: portrait) {
   .home-page {
-    font-size: 0.78rem;
+    font-size: 0.74rem;
   }
 
   .home-page .hero-banner {
@@ -348,11 +348,12 @@ main.content ol li {
 
   .home-page .profile-panel {
     padding: 0.72rem;
-    font-size: 0.66rem;
+    font-size: 0.62rem;
+    overflow-wrap: anywhere;
   }
 
   .home-page .profile-panel h3 {
-    font-size: 0.84rem;
+    font-size: 0.8rem;
   }
 
   .home-page .profile-photo {
@@ -362,15 +363,15 @@ main.content ol li {
 
   .home-page #quarto-document-content > .grid,
   .home-page .grid {
-    font-size: 0.7rem;
+    font-size: 0.66rem;
   }
 
   .home-page .grid h2 {
-    font-size: 0.96rem;
+    font-size: 0.92rem;
   }
 
   .home-page .grid h3 {
-    font-size: 0.82rem;
+    font-size: 0.78rem;
   }
 
   .home-page .feature-grid {
@@ -379,6 +380,13 @@ main.content ol li {
 
   .home-page .feature-card {
     padding: 0.9rem;
+  }
+
+  .home-page .profile-meta,
+  .home-page .profile-meta p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .feature-grid {
