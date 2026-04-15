@@ -410,26 +410,26 @@ main.content ol li {
   }
 
   .home-page .grid > .g-col-12.g-col-md-4 {
-    grid-column: span 5;
+    grid-column: span 4;
   }
 
   .home-page .grid > .g-col-12.g-col-md-8 {
-    grid-column: span 7;
+    grid-column: span 8;
   }
 
   .home-page .profile-panel {
-    padding: 0.72rem;
-    font-size: 0.62rem;
+    padding: 0.62rem;
+    font-size: 0.58rem;
     overflow-wrap: anywhere;
   }
 
   .home-page .profile-panel h3 {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
   }
 
   .home-page .profile-photo {
-    max-width: 122px;
-    margin-bottom: 0.58rem;
+    max-width: 108px;
+    margin-bottom: 0.45rem;
   }
 
   .home-page #quarto-document-content > .grid,
@@ -458,6 +458,16 @@ main.content ol li {
     max-width: 100%;
     overflow-wrap: anywhere;
     word-break: break-word;
+  }
+
+  .home-page .profile-meta {
+    margin: 0.35rem 0 0.5rem;
+  }
+
+  .home-page .profile-panel ul,
+  .home-page .profile-panel ol,
+  .home-page .profile-panel p {
+    margin-bottom: 0.35rem;
   }
 
   .feature-grid {
