@@ -301,11 +301,63 @@ main.content ol li {
   }
 
   .hero-layout {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 1rem;
   }
 
   .uom-logo-hero {
-    max-width: 140px;
+    max-width: 96px;
+  }
+
+  .hero-copy,
+  .hero-mark {
+    flex: 0 1 auto;
+  }
+
+  .hero-mark {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .hero-banner {
+    padding: 1rem 1rem 0.9rem;
+    border-radius: 1.25rem;
+  }
+
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .profile-panel {
+    padding: 1.2rem;
+  }
+
+  .profile-panel h3 {
+    white-space: normal;
+  }
+
+  .profile-photo {
+    max-width: 220px;
+  }
+
+  .hero-banner h2 {
+    font-size: clamp(1.45rem, 6vw, 2rem);
+  }
+
+  .hero-banner p,
+  .hero-banner a {
+    font-size: 0.9rem;
+  }
+
+  .hero-link,
+  .hero-link:visited,
+  .hero-banner .hero-link,
+  .hero-banner .hero-link:visited,
+  .hero-banner a.hero-link {
+    margin-right: 0.65rem;
+    margin-top: 0.08rem;
   }
 }
